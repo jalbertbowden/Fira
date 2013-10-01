@@ -4,25 +4,87 @@
     <meta charset="utf-8" />
     <title>Fira Sans OT Family @font-face Specimen</title>
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
-    <link rel="stylesheet" href="css/whatever.css" type="text/css" charset="utf-8" />
-    <link rel="stylesheet" href="css/fira-sans-ot-family.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/whatever.css" type="text/css" />
+    <link rel="stylesheet" href="css/fira-sans-ot-family.css" type="text/css" />
     <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/easytabs.js"></script>
 <style>
+#header h1 code{display:inline; color:#000}
 .font-name{display:block; font-size:24px; font-weight:normal}
-.fira-sans-ot-regular{font-family: 'fira_sans_otregular';}
+.fira-sans-ot{font-family:"fira-sans-ot";}
+.fira-sans-ot-light{font-weight:200}
+.fira-sans-ot-regular{font-weight:400}
+.fira-sans-ot-medium{font-weight:200}
+.fira-sans-ot-bold{font-weight:700}
+.fira-sans-ot-italic{font-style:italic}
 </style>
 <script>$(document).ready(function() { $('#container').easyTabs({defaultContent:1}); });</script>
   </head>
   <body>
     <div id="container">
-      <div id="header">Fira Sans OT Family @font-face Specimen</div>
+      <div id="header"><h1>Fira Sans OT Family <code>@font-face</code> Specimen</h1></div>
 	<div id="main_content">
 	  <div id="specimen">
-	    <div class="section"><div class="grid12 firstcol"><div class="huge">AaBb</div></div>
-	    <div class="section fira-sans-ot-regular"><div class="grid12 firstcol"><b class="font-name">Regular</b><div class="huge">AaBb</div></div>
+	    <div class="section fira-sans-ot fira-sans-ot-regular">
+	      <div class="grid12 firstcol">
+	        <h2 class="font-name">Regular</h2>
+	        <div class="huge">AaBb</div>
+	        <pre><code>.fira-sans-ot-regular{font-weight:400}</code></pre>
+	      </div>
+	    </div>
+	    <div class="section fira-sans-ot fira-sans-ot-italic">
+	      <div class="grid12 firstcol">
+	        <h2 class="font-name">Italic</h2>
+	        <div class="huge">AaBb</div>
+	        <pre><code>.fira-sans-ot-italic{font-style:italic}</code></pre>
+	      </div>
+	    </div>
+	    <div class="section fira-sans-ot fira-sans-ot-bold">
+	      <div class="grid12 firstcol">
+	        <h2 class="font-name">Bold</h2>
+	        <div class="huge">AaBb</div>
+	        <pre><code>.fira-sans-ot-bold{font-weight:700}</code></pre>
+	      </div>
+	    </div>
+	    <div class="section fira-sans-ot fira-sans-ot-bold fira-sans-ot-italic">
+	      <div class="grid12 firstcol">
+	        <h2 class="font-name">Bold&#45;Italic</h2>
+	        <div class="huge">AaBb</div>
+	        <pre><code>.fira-sans-ot-bold{font-weight:700} .fira-sans-ot-italic{font-style:italic}</code></pre>
+	      </div>
+	    </div>
+	    <div class="section fira-sans-ot fira-sans-ot-light">
+	      <div class="grid12 firstcol">
+	        <h2 class="font-name">Light</h2>
+	        <div class="huge">AaBb</div>
+	        <pre><code>.fira-sans-ot-light{font-weight:200}</code></pre>
+	      </div>
+	    </div>
+	    <div class="section fira-sans-ot fira-sans-ot-light fira-sans-ot-italic">
+	      <div class="grid12 firstcol">
+	        <h2 class="font-name">Light&#45;Italic</h2>
+	        <div class="huge">AaBb</div>
+	        <pre><code>.fira-sans-ot-light{font-weight:200} .fira-sans-ot-italic{font-style:italic}</code></pre>
+	      </div>
+	    </div>
+	    <div class="section fira-sans-ot fira-sans-ot-medium">
+	      <div class="grid12 firstcol">
+	        <h2 class="font-name">Medium</h2>
+	        <div class="huge">AaBb</div>
+	        <pre><code>.fira-sans-ot-medium{font-weight:200}</code></pre>
+	      </div>
+	    </div>
+	    <div class="section fira-sans-ot fira-sans-ot-medium fira-sans-ot-italic">
+	      <div class="grid12 firstcol">
+	        <h2 class="font-name">Medium&#45;Italic</h2>
+	        <div class="huge">AaBb</div>
+	        <pre><code>.fira-sans-ot-medium{font-weight:200} .fira-sans-ot-italic{font-style:italic}</code></pre>
+	      </div>
+	    </div>
         </div>
       </div>
+      <footer>
+        <p>Tested in Firefox 25 Beta, Chrome Version 31.0.1650.4 dev-m, Opera 12.16, Internet Explorer 10, and Safari 5.1.7 on Windows 7. OK in Chrome, Opera and Safari are pretty jagged.</p>
     </div>
   </body>
 </html>
